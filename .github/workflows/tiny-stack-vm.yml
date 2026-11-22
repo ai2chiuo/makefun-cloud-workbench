@@ -1,0 +1,49 @@
+name: Validate tiny stack VM cloud commit
+run-name: Tiny VM ${{ inputs.entry_sha }}
+on:
+  workflow_dispatch:
+    inputs:
+      entry_sha:
+        description: Exact full cloud-authored entry commit
+        required: true
+        type: string
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: ai2chiuo/tiny-stack-vm-01-run-20261122
+          ref: ${{ inputs.entry_sha }}
+          path: entry
+          persist-credentials: false
+      - name: Confirm exact entry commit
+        env:
+          ENTRY_SHA: ${{ inputs.entry_sha }}
+        run: test "$(git -C entry rev-parse HEAD)" = "$ENTRY_SHA"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.4'
+      - name: Fetch official public development kit
+        run: |
+          mkdir -p artifacts
+          curl --fail --location --silent --show-error --max-time 120 https://make.fun/c/tiny-stack-vm-01-run-20261122/kit -o "$RUNNER_TEMP/kit.tar.gz"
+          tar -xzf "$RUNNER_TEMP/kit.tar.gz" -C "$RUNNER_TEMP"
+      - name: Independent edge cases and seeded oracle comparisons
+        env:
+          VM_ENTRY: ${{ github.workspace }}/entry
+          VM_KIT: ${{ runner.temp }}/tiny-stack-vm-01-run-20261122-kit
+        run: node tests/tiny-stack-vm.mjs | tee artifacts/differential.json
+      - name: Official deterministic container practice grade
+        run: |
+          node "$RUNNER_TEMP/tiny-stack-vm-01-run-20261122-kit/cli/makefun.mjs" grade-local --kit "$RUNNER_TEMP/tiny-stack-vm-01-run-20261122-kit" --bot "$GITHUB_WORKSPACE/entry" --driver docker --json > artifacts/practice.json
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const r=JSON.parse(fs.readFileSync('artifacts/practice.json'));assert.equal(r.status,'finished');assert.equal(r.result.performance.scores.score,1000000);assert.equal(r.result.performance.scores.answered,40);assert.equal(r.l1.reproduced,true);console.log(JSON.stringify({status:r.status,score:r.result.performance.scores.score,answered:40,reproduced:r.l1.reproduced,size:r.result.size}));"
