@@ -1,6 +1,24 @@
 # Tiny VM: research for an actual top-ten result
 
-Owner request: keep improving `tiny-stack-vm-01-run-20261122` to the first ten places and research solutions on the web. An incremental size improvement is not the completion condition. No new implementation or submission was performed during this research.
+Owner request: keep improving `tiny-stack-vm-01-run-20261122` to the first ten places and research solutions on the web. An incremental size improvement is not the completion condition.
+
+## Latest verified result: goal unmet
+
+At 2026-11-22 12:33:51 UTC (20:33:51 Asia/Taipei), the existing submitted entry remains scored at 1,000,000 points, 3,007 bytes, overall rank 659 and prize rank 657. Its intake checks show no failures. The tenth paid-order row remains full score at 27 bytes, received at 05:34:35.901 UTC. No replacement was submitted.
+
+The owner-started 30-minute prototype round finished. Commit `7388ca9a34920d693e3051694a363041b61b6080` has a working 26-byte thin snapshot: a 19-byte entrypoint and its 7-byte pathname. The byte-identical 1,065-byte starter LICENSE counts toward the repository capacity but zero toward this size tie-break. The complete executed implementation is 2,711 bytes, including 2,692 bytes supplied as local environment data; the retained readable source is 2,862 bytes. This is not a standalone 26-byte VM.
+
+The actual thin entrypoint plus its exact local environment implementation passed the official process and clean-checkout Docker grades at 40/40, score 1,000,000, with a deterministic rerun. Readable-source and environment-value differential suites each passed 5,749 checks. Forty step-limit and forty output-limit programs were each executed twice, deterministically, with valid output formats and permissions. The prototype has not run on GitHub Actions.
+
+It is **not ready for submission**. The unmodified current SDK fails `thinking_revised` and `license_osi`. The VM's live revision check requires at least two assistant messages contributing retained lines to one counted file; the one-line entrypoint is credited to one message. The comparable Sokoban competition sets this check's `applies` to false. Its small entries therefore do not establish that this VM can pass with the same layout.
+
+For the tested direct-eval architecture, adding a second source line costs at least one byte, taking the snapshot to at least 27. A real second retained line origin would still need genuine editing and verification. Matching 27 now loses the earlier-receipt tie; this observation is not a proof about every possible implementation. Rewriting the same final line repeatedly or changing records is not an acceptable fix.
+
+The unchanged MIT text is detected as MIT by GitHub for the published source, but the local SPDX check fails this unpublished prototype. GitHub text detection has not validated the exact prototype commit. The full executable-source-outside-snapshot policy also remains unresolved: the official house reply only escalated it, and no sponsor/team answer appeared in the latest thread read. Neither full performance nor a size measurement settles these eligibility questions.
+
+All 15 source-bundle, test-report, evidence and SDK hashes listed by the cloud ready report were independently recalculated and matched. The original native record prefix is unchanged. The CLI was no longer running at verification. Complete source and the genuine original-plus-continuation record remain in the cloud workspace; no program value was uploaded to a service secret store, no prototype entry was published, and the verified submitted version was preserved.
+
+The detailed sanitized result is in [deliveries/tiny-stack-vm-top10-prototype-20261122.json](deliveries/tiny-stack-vm-top10-prototype-20261122.json). Further replacement needs a permitted source-delivery contract and a legitimate qualifying-size candidate passing all applicable checks, followed by exact-candidate Actions and a current free-quota check. The top-ten goal remains unmet.
 
 ## Verified starting point
 

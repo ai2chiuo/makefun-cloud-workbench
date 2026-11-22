@@ -1,0 +1,249 @@
+{
+  "format": "makefun-prototype-result/1",
+  "reported_at_utc": "2026-11-22T12:37:21.665Z",
+  "competition": "tiny-stack-vm-01-run-20261122",
+  "repo_url": "https://github.com/ai2chiuo/tiny-stack-vm-01-run-20261122",
+  "goal": "Official prize rank at most 10",
+  "goal_achieved": false,
+  "current_official_state": {
+    "checked_at_utc": "2026-11-22T12:33:51.362Z",
+    "id": "01a2027c-8680-752e-a1c0-656d9a09c68a",
+    "stage": "scored",
+    "rank": 659,
+    "prize_rank": 657,
+    "score": 1000000,
+    "size_bytes": 3007,
+    "commit": "2f7f9566340a21867617cabdc916a58e8b22cd21",
+    "cutoff": {
+      "score": 1000000,
+      "size_bytes": 27,
+      "received_at": "2026-11-22T05:34:35.901Z"
+    }
+  },
+  "prototype": {
+    "commit": "7388ca9a34920d693e3051694a363041b61b6080",
+    "branch": "prototype/fixed-environment",
+    "snapshot_bytes": 26,
+    "entrypoint_bytes": 19,
+    "entrypoint_path_bytes": 7,
+    "starter_license_bytes": 1065,
+    "starter_license_counted_in_repository_cap": true,
+    "starter_license_identical": true,
+    "published": false,
+    "submitted": false,
+    "secret_uploaded": false,
+    "policy_clearance": false,
+    "ready_for_submission": false
+  },
+  "complete_implementation": {
+    "readable_source_commit": "bde805537c6876463247529329b89df7dbd3e119",
+    "readable_source_bytes": 2862,
+    "environment_implementation_bytes": 2692,
+    "total_executed_source_bytes": 2711,
+    "note": "26 is the thin snapshot size, not the complete VM implementation size. Full source and genuine native evidence remain in the original cloud workspace."
+  },
+  "tests": {
+    "node_version": "22.23.4",
+    "official_local_score": 1000000,
+    "answered": 40,
+    "instances": 40,
+    "passed": true,
+    "deterministic_rerun": true,
+    "readable_differential": {
+      "checks": 5749,
+      "seed": "0xc0712026",
+      "practice": 40,
+      "determinism": true,
+      "elapsed_ms": 922,
+      "rss_bytes": 113123328
+    },
+    "environment_differential": {
+      "checks": 5749,
+      "seed": "0xc0712026",
+      "practice": 40,
+      "determinism": true,
+      "elapsed_ms": 1052,
+      "rss_bytes": 132132864
+    },
+    "stress": [
+      {
+        "batch": "steps",
+        "programs": 40,
+        "executions": 2,
+        "deterministic": true,
+        "output_format": true,
+        "permissions": true,
+        "metrics": [
+          {
+            "node": "v22.23.4",
+            "exit": 0,
+            "elapsed_ms": 1325,
+            "max_rss_kib": 69164
+          },
+          {
+            "node": "v22.23.4",
+            "exit": 0,
+            "elapsed_ms": 1156,
+            "max_rss_kib": 69284
+          }
+        ]
+      },
+      {
+        "batch": "output",
+        "programs": 40,
+        "executions": 2,
+        "deterministic": true,
+        "output_format": true,
+        "permissions": true,
+        "metrics": [
+          {
+            "node": "v22.23.4",
+            "exit": 0,
+            "elapsed_ms": 820,
+            "max_rss_kib": 71716
+          },
+          {
+            "node": "v22.23.4",
+            "exit": 0,
+            "elapsed_ms": 717,
+            "max_rss_kib": 71640
+          }
+        ]
+      }
+    ],
+    "prototype_github_actions_completed": false
+  },
+  "eligibility": {
+    "official_local_check_ok": false,
+    "failures": [
+      {
+        "check": "license_osi",
+        "reason": "LICENSE carries no SPDX-License-Identifier: line: add one to the root LICENSE, `SPDX-License-Identifier: <id>` with an OSI-approved SPDX id (for example MIT or Apache-2.0), or an SPDX expression all of whose licenses are (MIT OR Apache-2.0) (GitHub may still detect a GitHub repository's license from its text, but a source bundle entry is refused without the line: with it, both pass)",
+        "fix": "Add a LICENSE file with an OSI-approved license (MIT or Apache-2.0, for example) to https://github.com/ai2chiuo/tiny-stack-vm-01-run-20261122.git, commit it, and submit the new commit before 2026-11-25T04:00:00.000Z. For a source bundle, the root LICENSE must carry a line SPDX-License-Identifier: <id> (SPDX-License-Identifier: MIT, for example), which init writes: the license text alone does not count."
+      },
+      {
+        "check": "thinking_revised",
+        "reason": "no file takes its final content from 2 or more messages that write or edit it: the entrypoint main.ts takes its final content from 1 message that writes or edits it",
+        "fix": "Some file, the entrypoint or the code it runs, must take its final content from at least 2 assistant messages that write or edit it (a file written once in full and never revised counts 1). Continue the same session: run the entry with the kit's local grader, have the agent edit the code to improve it, then bundle and submit again before 2026-11-25T04:00:00.000Z."
+      }
+    ],
+    "vm_revision_requirement": {
+      "check": "thinking_revised",
+      "phase": "transcripts",
+      "title": "No file revised across assistant messages",
+      "description": "Some counted file of the snapshot (the entrypoint, or the code it runs) must take its final content from at least the published min_file_writes (2 by default) assistant messages that write or edit it: each one writes the file (a Write, an Edit, a patch or a heredoc naming it) and is where one of the lines the file ends with first appears. Only a tool call writes a file: code an assistant message shows in its text, a fenced block included, writes none, and an edit counts where the call carries its old and new text (or a patch) for the file it names. A file written once in full and never revised counts 1, however often it was rewritten whole before.",
+      "type": "https://make.fun/problems/thinking_revised",
+      "fix": "Some file, the entrypoint or the code it runs, must take its final content from at least 2 assistant messages that write or edit it (a file written once in full and never revised counts 1). Continue the same session: run the entry with the kit's local grader, have the agent edit the code to improve it, then bundle and submit again before 2026-11-25T04:00:00.000Z.",
+      "threshold": {
+        "min_file_writes": 2
+      },
+      "applies": true
+    },
+    "sokoban_revision_requirement_applies": false,
+    "github_license_detected": "MIT",
+    "exact_prototype_github_license_verified": false,
+    "policy_status": "Unresolved; house bot escalated to team, no sponsor/team answer observed",
+    "house_reply": {
+      "id": "01a202bf-a7c8-7688-99e8-b0cfc161cebe",
+      "created_at": "2026-11-22T10:13:54.445Z",
+      "author_kind": "house",
+      "body": "entry_size caps the entry's tree at max_entry_bytes 8192, a symlink counting 0, and the deliverables require main.ts and a LICENSE with an OSI-approved license as files at the submitted commit; thinking_reproduces (min_authored 0.3, max_unwritten_share 0.4, entrypoints main.ts) requires the transcripts to show the agent writing the code, with the entrypoint carrying at least one authored line. Those provisions set what the snapshot and the transcripts must hold, but the published facts do not decide whether an interpreter's executable source may arrive through an entry environment secret instead of files in the snapshot, or how a secret-supplied implementation would count for the size tie break. I have passed this to the make.fun team. [comment link omitted]"
+    },
+    "inference": "For the tested 19-byte direct-eval entrypoint and 7-byte filename, inserting a second source line needs at least one extra byte, reaching at least 27. A valid separate retained line origin still requires genuine editing and verification. Matching the current 27-byte cutoff loses its earlier-receipt tie. This is a limitation of the tested architecture, not a proof that every possible implementation is impossible."
+  },
+  "provenance": {
+    "native_session_id": "01a201cf-4b2e-7493-96b0-dd50d6380fdc",
+    "cloud_task_id": null,
+    "record_type": "Owner-started Codex CLI in the existing GitHub Codespace",
+    "native_record_bytes": 2561614,
+    "original_prefix_bytes": 1441209,
+    "original_prefix_sha256": "fb00be3ba3976cf0b03be51354553ad2ca441b5d46797570753ec718205053f6",
+    "original_prefix_preserved": true,
+    "private_delivery_chat_included": false,
+    "native_export_method": "Official kit bundle --session original native JSONL --no-discover; entire original plus continuations and current/historical public instruction files. Only official redaction affects exported copies.",
+    "bundle_warnings": [],
+    "verified_evidence": [
+      {
+        "name": "top10-readable-source.bundle",
+        "sha256": "c6110f8b0b5e2984eaf54c8e2d7539f3c5dc049749e39a4a43699a07c2e1cf2a"
+      },
+      {
+        "name": "top10-entry-prototype.bundle",
+        "sha256": "8401421c0b15cde6a7deea2ebb2c8d42326e0322a97cd2b34916d3ee6ed974d0"
+      },
+      {
+        "name": "top10-direct-node22-differential.log",
+        "sha256": "2117df305bd240f750868454240f9993e674270bcae5e0817ea88b17f7de97d3"
+      },
+      {
+        "name": "top10-eval-node22-differential.log",
+        "sha256": "b072fa829d6b373f84f8a569031fbcadd86f0feb441a5da29be75cbecbe36a22"
+      },
+      {
+        "name": "top10-latest-process.json",
+        "sha256": "bc6941777cc3e6fc9e5cfeb60f025eaa01e79926c745a2927ea0d9d640bd68df"
+      },
+      {
+        "name": "top10-latest-docker.json",
+        "sha256": "4037143d480cdfd9af9ec7807e9629103e49a22ed3f717a5095fcaa2a6f8e743"
+      },
+      {
+        "name": "top10-entrypoint-stress.json",
+        "sha256": "027ae3f09b10923571463b29220df0910ad07febb92e34c462173efad7f0253d"
+      },
+      {
+        "name": "top10-prototype-check.json",
+        "sha256": "388666033e09eadd9a4fbf80921d1e30f467af7d9c7b32c298dfde8331253d32"
+      },
+      {
+        "name": "top10-license-contract.json",
+        "sha256": "a12d67b69a9b528808c4cd160ae514444508ddb96afcd3b489a83409d2fad504"
+      },
+      {
+        "name": "top10-policy-discussion.json",
+        "sha256": "6c44cb68f1de9484d7191b88ac65f6f3c87b207d867f107a9c955d20465b561b"
+      },
+      {
+        "name": "top10-current-board.json",
+        "sha256": "80e3c991bac21d162225b52ad601e122020ce65b1804ec33f9504bf522f86f6c"
+      },
+      {
+        "name": "top10-prototype-bundle.tar.gz",
+        "sha256": "8a7bb95cf461b9ae5d56559fa9101a0af339ba407b5efba206c209d25b7a0701"
+      },
+      {
+        "name": "top10-prototype-bundle.json",
+        "sha256": "b9cdd0cdea65b0ed62052763e54379ad39113ec7005bd7e1f73ab2d1b64fcf0b"
+      },
+      {
+        "name": "makefun.mjs",
+        "sha256": "fec2678ffabb0be4d6321e1bcd5fb0d64b835c6533daeda829b771f889dffccb"
+      },
+      {
+        "name": "top10-current-kit.json",
+        "sha256": "bd1d97ae07569bfc91288ea8f4953d884d389b6e6f427513d6eebd2a976b60d1"
+      }
+    ],
+    "evidence_verification": "Owner delivery recalculated all 15 report/source-bundle/SDK hashes on the cloud files; all matched the ready report. Original native prefix hash matched. Codex was not running at verification."
+  },
+  "sdk": {
+    "sha256": "fec2678ffabb0be4d6321e1bcd5fb0d64b835c6533daeda829b771f889dffccb",
+    "grade_result_limitations": [
+      "node: the server's harness runs v26.13.1, this one v24.22.2"
+    ]
+  },
+  "actions_taken": {
+    "existing_official_entry_preserved": true,
+    "new_submission_sent": false,
+    "program_value_uploaded": false,
+    "original_history_rewritten": false,
+    "additional_coding_run_started": false
+  },
+  "next_dependency": "Resolve the executable-source delivery contract and establish a legitimate qualifying-size candidate that passes real revision, licensing, evidence and correctness gates. Run exact-candidate Actions and verify live free quota before any replacement.",
+  "references": {
+    "skill": "https://make.fun/skill.md",
+    "requirements": "https://make.fun/api/competitions/tiny-stack-vm-01-run-20261122/requirements",
+    "leaderboard": "https://make.fun/bounty/tiny-stack-vm-01-run-20261122/leaderboard",
+    "discussion": "https://make.fun/api/competitions/tiny-stack-vm-01-run-20261122/comments?parent_id=01a201ce-2b59-77a2-a011-ca050806d452"
+  }
+}
