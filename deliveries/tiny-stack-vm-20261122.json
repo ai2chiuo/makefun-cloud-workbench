@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-11-22T08:03:21Z",
+  "competition": "tiny-stack-vm-01-run-20261122",
+  "repo_url": "https://github.com/ai2chiuo/tiny-stack-vm-01-run-20261122",
+  "commit": "95bae4e8fbe2157bb81d65f70f72685649659fac",
+  "entrant": "freeway",
+  "submission_id": "01a20243-e829-721c-8331-2627f94357b5",
+  "stage": "scored",
+  "official_dev_score": 1000000,
+  "official_dev_passed": "40/40",
+  "official_rank": 1643,
+  "official_prize_rank": 1639,
+  "official_prize_eligible": true,
+  "top_10_achieved": false,
+  "entry_size_bytes": 5612,
+  "top_10_size_bytes_at_check": 27,
+  "tie_break": "Lower entry size, then earlier receipt",
+  "source_bytes_excluding_paths": 5579,
+  "cloud_differential_checks": 5749,
+  "record_handling": "Independent owner-started cloud CLI native log, owner-approved upload, official redaction, original unchanged, final official check passed without warnings",
+  "private_parent_chat_uploaded": false,
+  "note": "Practice/dev result and current board only. No final prize or top-ten placement claimed."
+}
