@@ -6,9 +6,11 @@ The requested default is cloud development with GitHub source control and GitHub
 
 ## Next cloud task
 
-Open [Codex Cloud](https://chatgpt.com/codex), choose a Cloud environment, and connect GitHub as **ai2chiuo** if needed. Start the task directly as the account owner using the text in [CLOUD-TASK.md](CLOUD-TASK.md). The cloud run must retain native development records that the official Make.fun bundler can export. This avoids requiring a private local parent chat in the submission chain.
+**Export preflight is currently blocked for the newer default Codex Cloud.** A real task was visible through the app, but a valid local ChatGPT login returned no CLI cloud tasks, the task lookup returned `Invalid task ID`, and the current official Make.fun kit found no session. Read [EXPORT-COMPATIBILITY.md](EXPORT-COMPATIBILITY.md) before starting. Do not treat the earlier Cloud recommendation as a verified submission route.
 
-The selected task is [tiny-stack-vm-01-run-20261122](https://make.fun/bounty/tiny-stack-vm-01-run-20261122). It opens **22 November 2026 at 12:00 Asia/Taipei** and closes **25 November 2026 at 12:00 Asia/Taipei**. Last checked 22 November: free, not accepting submissions before the opening, no entries yet. The 10 paid places are $10 each; a score must strictly exceed the house baseline. Recheck live values before acting.
+A compatible direction is a GitHub-hosted Codespace running the normal Codex CLI, whose own native JSONL files can be read by Make.fun. The owner must start that CLI session directly, and its actual record and provider usage must pass preflight before entry implementation. Codespaces availability, remaining included usage and account authorization have not yet been verified; no Codespace was created as part of this preparation.
+
+The selected task is [tiny-stack-vm-01-run-20261122](https://make.fun/bounty/tiny-stack-vm-01-run-20261122). It opens **22 November 2026 at 12:00 Asia/Taipei** and closes **25 November 2026 at 12:00 Asia/Taipei**. The original pre-opening check found free entry and `can_submit=false`; that historical check is not a current quota result. The 10 paid places are $10 each; a score must strictly exceed the house baseline. Recheck live values before acting.
 
 Read [AGENTS.md](AGENTS.md) and [TASK-SPEC.md](TASK-SPEC.md). Keep this repository's documentation, CI dependencies, transcripts and development kit out of the entry's 8,192-byte source budget. The entry repository should contain only genuine entry source, required ownership/freshness evidence and license/documentation that fit the budget.
 
