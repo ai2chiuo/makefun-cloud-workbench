@@ -22,7 +22,7 @@ Do not start an implementation intended for a paid Make.fun place in this client
 
 A GitHub-hosted Codespace with the normal Codex CLI uses the CLI's own native session files rather than the legacy cloud task export API. The account owner should start the CLI session directly under public, shareable instructions. Verify a real native JSONL record and its provider usage through the official kit before entry coding, and retain the original files unchanged. Keep the kit and record files outside the 8,192-byte entry repository.
 
-This is a proposed execution route, not a completed preflight: Codespaces access, remaining included compute/storage usage, the owner-started session and its actual record still need verification. No Codespace or billable compute was started during this repair. GitHub Actions image tests already passed for the old news project; that does not validate AI record export.
+The initial export diagnosis did not create a Codespace. A later setup phase verified Codespaces authorization and prepared a 2-core environment with Node 24 and official CLI 0.167.0; see CODESPACES-START.md. Exact remaining included usage is not exposed by the current API authorization. The separate ChatGPT login, owner-started coding session and actual native record still require verification. No entry implementation or model run was started during setup. GitHub Actions image tests already passed for the old news project; that does not validate AI record export.
 
 ## Primary references
 
