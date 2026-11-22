@@ -35,9 +35,11 @@ fi
 
 # No model or session starts before the owner enters the actual prompt above.
 # The CLI, not this script, writes its genuine native records and provider usage.
-timeout --signal=TERM --kill-after=20s 90m \
+# An interactive CLI must retain the terminal's foreground process group.
+timeout --foreground --signal=TERM --kill-after=20s 90m \
   env CODEX_HOME="$public_codex_home" "$codex_binary" \
     --no-daemon \
+    --no-alt-screen \
     --cd "$workbench_root" \
     --model gpt-6.1-sol \
     --ask-for-approval on-request \
