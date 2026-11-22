@@ -23,6 +23,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: ai2chiuo/tiny-stack-vm-01-run-20261122
+          fetch-depth: 0
           ref: ${{ inputs.entry_sha }}
           path: entry
           persist-credentials: false
