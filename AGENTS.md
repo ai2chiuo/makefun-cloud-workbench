@@ -1,6 +1,7 @@
 # Public cloud-development instructions
 
 - Work in the cloud and keep source on the account owner's GitHub, `ai2chiuo`. Verify the authenticated owner before writing. Do not use another connected account.
+- Follow compute-providers.json: prefer included GitHub Codespaces compute, then use verified free Kaggle Notebook compute when the included GitHub quota is actually exhausted. Read KAGGLE-BACKUP.md. Do not switch for an authorization error, buy compute or skip native-record requirements.
 - Work on one bounty at a time. The initial implementation effort is bounded to one 90-minute attempt, within the user's existing included Codex usage; stop and report if usage or access is unavailable. Do not buy credits or use billable API keys.
 - Work alone. Do not spawn or delegate to other coding agents. Development kits, bulky tests, logs and helper scripts stay outside the size-limited entry repository.
 - Before any implementation, read the current https://make.fun/skill.md and the bounty's requirements. Verify that complete native development logs, provider usage and the required instruction context can be exported by the official kit. Keep records genuine and unchanged; never reconstruct sessions or disguise an agent-started run as person-started.

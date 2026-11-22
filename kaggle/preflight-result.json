@@ -1,0 +1,19 @@
+{
+  "format": "makefun-kaggle-execution-evidence/1",
+  "kernel": "ai2chiuo/makefun-cpu-preflight-20261122",
+  "version": 1,
+  "official_status": "COMPLETE",
+  "is_private": true,
+  "gpu_enabled": false,
+  "internet_enabled": true,
+  "completed_at_utc": "2026-11-22T07:22:09Z",
+  "python": "3.13.18",
+  "node": "v22.23.4",
+  "node_child_result": 42,
+  "cpu_execution_passed": true,
+  "downloaded_output_integrity_verified": true,
+  "artifact_sha256": "b7ad0b93a1c1429645705807fbacb7de1a90da282ae5b0dd4c57747c0cb10cca",
+  "public_http_probe_statuses": {"github": 200, "makefun": 200, "openai_discovery": 200},
+  "model_called": false,
+  "native_codex_record_export_verified": false
+}

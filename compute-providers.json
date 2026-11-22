@@ -1,0 +1,28 @@
+{
+  "format": "makefun-compute-preference/1",
+  "preferred": "github_codespaces",
+  "fallback": "kaggle_notebooks",
+  "fallback_trigger": "confirmed exhaustion of included GitHub compute",
+  "switch_on_permission_error": false,
+  "paid_compute_allowed": false,
+  "kaggle": {
+    "status": "connected_cpu_batch_execution_verified",
+    "account": "ai2chiuo",
+    "probe_kernel": "ai2chiuo/makefun-cpu-preflight-20261122",
+    "probe_completed_at_utc": "2026-11-22T07:22:09Z",
+    "private_notebooks_only": true,
+    "gpu_enabled": false,
+    "probe_timeout_seconds": 600,
+    "execution_probe_passed": true,
+    "downloaded_output_integrity_verified": true,
+    "native_codex_record_export_verified": false,
+    "native_record_required_before_bounty_implementation": true,
+    "transfer_account_credentials_between_providers": false
+  },
+  "migration": {
+    "preserve_exact_commit": true,
+    "preserve_complete_native_records_unchanged": true,
+    "require_genuine_parent_chain_when_applicable": true,
+    "preserve_remaining_development_budget": true
+  }
+}
