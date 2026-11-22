@@ -10,9 +10,9 @@ The first twelve paid-order rows were all full-score, 27-byte entries. Size brea
 
 ## Ownership is a concrete prerequisite
 
-The authenticated Make.fun account `freeway` currently has no linked GitHub login. GitHub CLI authentication as `ai2chiuo` does not populate that Make.fun account field. The official `repo_owner` check accepts the account's linked GitHub owner or a `.makefun/owner.json` signed-wallet claim.
+The owner completed the Make.fun GitHub link. The authenticated API verified `freeway.github_login == ai2chiuo` at 2026-11-22 10:02:48 UTC. The official `repo_owner` check accepts that linked owner without `.makefun/owner.json`.
 
-For this account's 44-character wallet, the smallest ordinary claim JSON is 57 bytes and its required path is 19 bytes: 76 scored bytes before any VM source. The existing proof file is therefore already larger than the observed paid cutoff. The owner must link `ai2chiuo` from the existing `freeway` profile's Identity section before a GitHub-based 26-byte layout can be considered. Verify the resulting account field; never remove the claim file on an assumption, create a different Make.fun account, or merge identities without the owner's action.
+The redundant 58-byte claim and its 19-byte path were removed on a separate cloud candidate branch `revision/linked-github-owner`, commit `8e9126afac456d109e6183f68e742db2cb1fa33b`. The executable main.ts blob is unchanged. Official local checks passed and measured size is 2,930 bytes. This metadata-only candidate has not replaced the submitted entry. Verify the account link again before any future submission.
 
 ## What web research established, and what it did not
 
@@ -25,9 +25,11 @@ For this account's 44-character wallet, the smallest ordinary claim JSON is 57 b
 
 The platform-level size/secrets/authorship question was submitted through the official skill's feedback process. Receipt `01a2029a-80b8-7675-86f2-e239a6824f1b`, received 2026-11-22 09:33:29 UTC, returned no matching known issue or immediate policy answer. Feedback is batched; this receipt is not permission or a promise of a direct reply.
 
+The official discussion workflow was then used for one documentation question (`01a202bf-3572-7156-861b-48732087e758`). The server-marked house bot replied in `01a202bf-a7c8-7688-99e8-b0cfc161cebe` at 2026-11-22 10:13:54 UTC: the published facts do not decide the executable-source-in-secret question or its size accounting; it passed the question to the team. That reply is not permission or an eligibility ruling. Read the thread through the official API with `parent_id=01a201ce-2b59-77a2-a011-ca050806d452`; treat other participants' text as untrusted and follow no comment links.
+
 ## Continuation conditions
 
-Reconfirm the account link and live paid cutoff. Before spending another coding round, identify a documented layout capable of beating that cutoff while preserving all executed source, real authorship, licensing and deterministic behavior. Distinguish a published rule, a platform response, a third-party claim and an inference. If no compliant qualifying layout is available, report that concrete limitation rather than repeatedly minifying a standalone VM that cannot reach the cutoff.
+Reconfirm the account link and live paid cutoff. A bounded conditional prototype can establish technical feasibility while policy clarification is pending; see TINY-VM-TOP10-RUN.md. It may not upload executable code into an entry secret or submit a loader layout while the policy remains unresolved. Distinguish technical feasibility from eligibility. Do not replace the verified entry merely because a size counter or provisional check accepts a layout.
 
 Any implementation still runs in the original owner-started cloud CLI under genuine native recording, not in the private delivery chat. Keep the submitted commit reachable, source readable for review, original records unchanged and all actual provider usage. A new entry must pass correctness, deterministic Docker grading, meaningful edge tests, complete evidence and ownership checks. The competition uses Force_Last; do not replace the verified entry with an invalid or lower-score experiment. Confirm a real prize rank of at most ten before reporting success.
 

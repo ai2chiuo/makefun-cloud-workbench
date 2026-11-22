@@ -12,6 +12,16 @@ if [[ ! -t 0 || ! -t 1 || -n "${CODEX_THREAD_ID:-}" ]]; then
   echo 'Run this directly in your Codespace terminal, outside another agent.' >&2
   exit 1
 fi
+continuation_doc="${MAKEFUN_CONTINUATION_DOC:-TINY-VM-REVISION.md}"
+continuation_minutes="${MAKEFUN_CONTINUATION_MINUTES:-45}"
+case "$continuation_doc" in
+  TINY-VM-REVISION.md|TINY-VM-TOP10-RUN.md) ;;
+  *) echo 'Unknown public continuation document; no model started.' >&2; exit 1 ;;
+esac
+case "$continuation_minutes" in
+  30|45) ;;
+  *) echo 'Continuation limit must be 30 or 45 minutes; no model started.' >&2; exit 1 ;;
+esac
 if [[ ! -x "$codex_binary" || ! -f "$native_record" ]]; then
   echo 'The original CLI or native record is missing; no model started.' >&2
   exit 1
@@ -38,9 +48,9 @@ print('Original native record prefix verified; it will be resumed without rewrit
 PY
 env CODEX_HOME="$public_codex_home" "$codex_binary" login status
 cd "$workbench_root"
-printf '%s\n' 'This resumes the original recorded session for at most 45 minutes.'
+printf '%s\n' "This resumes the original recorded session for at most $continuation_minutes minutes."
 printf '%s\n' 'Type your actual continuation prompt. Suggested:'
-printf '%s\n' '讀取 TINY-VM-REVISION.md，繼續修改 tiny-stack-vm-01-run-20261122，縮小體積，完整測試後準備免費投稿。'
+printf '%s\n' "讀取 $continuation_doc，繼續 tiny-stack-vm-01-run-20261122，依文件條件完成修改與測試。"
 IFS= read -r -p 'Continue: ' owner_prompt
 if [[ -z "$owner_prompt" || "$owner_prompt" != *tiny-stack-vm-01-run-20261122* ]]; then
   echo 'Enter a prompt naming tiny-stack-vm-01-run-20261122; no model started.' >&2
@@ -49,7 +59,7 @@ fi
 
 # The owner starts this continuation and enters its actual message. The native
 # CLI appends its own record; this launcher creates or rewrites no transcript.
-timeout --foreground --signal=TERM --kill-after=20s 45m \
+timeout --foreground --signal=TERM --kill-after=20s "${continuation_minutes}m" \
   env CODEX_HOME="$public_codex_home" "$codex_binary" \
     --no-daemon \
     --no-alt-screen \
