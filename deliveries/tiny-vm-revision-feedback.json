@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-11-22T08:22:22.765Z",
+  "competition": "tiny-stack-vm-01-run-20261122",
+  "submission_id": "01a20243-e829-721c-8331-2627f94357b5",
+  "baseline_commit": "95bae4e8fbe2157bb81d65f70f72685649659fac",
+  "baseline": {
+    "score": 1000000,
+    "rank": 1690,
+    "prize_rank": 1686,
+    "size_bytes": 5612
+  },
+  "top10": {
+    "score": 1000000,
+    "size_bytes": 27,
+    "received_at": "2026-11-22T05:34:35.901Z"
+  },
+  "tie_break": {
+    "key": "size_bytes",
+    "title": "Entry size (bytes)",
+    "better": "lower"
+  },
+  "submission_rule": "Force_Last",
+  "free": true,
+  "can_submit": true,
+  "entries_left": 9,
+  "target": "Keep every correctness check and strictly reduce size; beating the top-ten tie requires smaller size or an earlier receipt, not merely an equal score."
+}
