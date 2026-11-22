@@ -2,6 +2,7 @@
 
 - Work in the cloud and keep source on the account owner's GitHub, `ai2chiuo`. Verify the authenticated owner before writing. Do not use another connected account.
 - Work on one bounty at a time. The initial implementation effort is bounded to one 90-minute attempt, within the user's existing included Codex usage; stop and report if usage or access is unavailable. Do not buy credits or use billable API keys.
+- Work alone. Do not spawn or delegate to other coding agents. Development kits, bulky tests, logs and helper scripts stay outside the size-limited entry repository.
 - Before any implementation, read the current https://make.fun/skill.md and the bounty's requirements. Verify that complete native development logs, provider usage and the required instruction context can be exported by the official kit. Keep records genuine and unchanged; never reconstruct sessions or disguise an agent-started run as person-started.
 - Read EXPORT-COMPATIBILITY.md. The newer default Codex Cloud task failed the official export preflight even with a valid local login. A visible chat, a shared URL, an app status/history snapshot, successful GitHub login or a runtime image test is not an exportable native development record. Do not work around this failure by making a transcript from app snapshots, inventing usage, deleting instructions or weakening the preflight gate.
 - Use public research and official specifications; write original entry code. Do not copy a competing entry, existing engine, reference implementation or generated answer table into the entry.
