@@ -4,6 +4,8 @@ Owner request: keep improving `tiny-stack-vm-01-run-20261122` to the first ten p
 
 ## Latest verified result: goal unmet
 
+Owner direction after the last feasibility review: if no qualifying change is found, switch tasks. The current SDK expressly reserves NODE_OPTIONS and NODE_PATH, and its retained-line revision check still rejects the one-line prototype. No qualifying 26-byte change was found in that final review; no further VM coding run or replacement submission was started. Preserve the valid existing entry and prototype evidence. The selected next task is the separate free heist-game bounty, specified in HEIST-RUN.md; it needs a new owner-started native session because the VM session predates that game's opening.
+
 At 2026-11-22 12:33:51 UTC (20:33:51 Asia/Taipei), the existing submitted entry remains scored at 1,000,000 points, 3,007 bytes, overall rank 659 and prize rank 657. Its intake checks show no failures. The tenth paid-order row remains full score at 27 bytes, received at 05:34:35.901 UTC. No replacement was submitted.
 
 The owner-started 30-minute prototype round finished. Commit `7388ca9a34920d693e3051694a363041b61b6080` has a working 26-byte thin snapshot: a 19-byte entrypoint and its 7-byte pathname. The byte-identical 1,065-byte starter LICENSE counts toward the repository capacity but zero toward this size tie-break. The complete executed implementation is 2,711 bytes, including 2,692 bytes supplied as local environment data; the retained readable source is 2,862 bytes. This is not a standalone 26-byte VM.

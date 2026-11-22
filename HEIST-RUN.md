@@ -1,0 +1,49 @@
+# Active task: an original offline heist game
+
+The owner asked for a final VM feasibility attempt and then a different task if that attempt could not produce a qualifying result. The final SDK review found no qualifying 26-byte VM change: the retained-line revision requirement still fails, runtime preloading through NODE_OPTIONS/NODE_PATH is expressly reserved, and executable source delivered outside the snapshot remains unresolved. Preserve the existing VM submission and its complete records. This is now a separate game task, not another VM revision.
+
+## Task and scope
+
+- Competition: `best-heist-game-20261122-0559`, https://make.fun/bounty/best-heist-game-20261122-0559.
+- Owner: GitHub `ai2chiuo`, Make.fun `freeway`. Free submission only. The owner-side publisher handles GitHub writes and signing; do not create another account or copy credential files.
+- Use the existing included GitHub Codespace. Work alone, no subagents, no asset-generation child agents, no purchased compute, model API keys, services, payments, social posts or trades.
+- One owner-started fresh native Codex CLI session, at most 90 minutes. The VM session began before this game's 05:59 UTC opening and must not be reused for this game's implementation.
+- Deadline: 2026-11-22 17:59 UTC, 2026-11-23 01:59 Asia/Taipei. The next observed blind judging round is 2026-11-22 14:59 UTC / 22:59 Taipei. Recheck these on the live API. No immediate score or top-ten claim follows submission; read the entrant's official round results.
+- The initial implementation goal is a complete, tested qualifying game with strong screenshots, followed by a real free entry receipt. The competition pays ten places, but no rank is promised before judging.
+
+## Before implementation
+
+Read AGENTS.md, EXPORT-COMPATIBILITY.md, compute-providers.json, the current https://make.fun/skill.md and this game's live requirements and full rules. The active specification is this file. The official kit is `/workspaces/.makefun-delivery-kits/best-heist-game-20261122-0559-kit`; 24 manifest files were verified, CLI SHA-256 `79d327649eadb642a3c64b09d199efc6be2e9a9737b9f1b50fbad1347975a141`. Verify or refresh against the live manifest if it changes. Keep the official kit unchanged.
+
+Source: `/workspaces/makefun-glasshouse-heist-20261122`, a fresh public owner repository created after opening. Records/tests/tools: `/workspaces/best-heist-game-20261122-0559-records` and `/workspaces/.makefun-cloud-tools/heist`, outside the entry. Verify the owner-created repository and creation time before writing; a missing integration token for pushing does not prevent local implementation and commit in that verified checkout.
+
+Before writing game code, identify this new CLI's own native JSONL record and its genuine first owner message. Verify that its session starts after 05:59 UTC, that real provider usage and the system/instruction context are present, and that the official bundle command can export them. Save the actual preflight result outside the entry. Do not use the older VM session, an app history snapshot, a handmade transcript, estimated usage or this private delivery chat. Never rewrite a native log. If export fails, stop implementation and report its exact reason.
+
+The browser environment preflight report is in records/environment-preflight.json. It must show a real local page opened, a native browser screenshot and zero page errors. This is an environment test, never a game screenshot. Node is 24.22.2, which meets the stated minimum. Test the actual submission program on Node 22 as well, using the existing Docker setup or an official Node 22 binary.
+
+## Make the game
+
+Build an original polished desktop heist with multiple routes, readable patrols and vision cones, cameras, costly tools, a loot target, a visible alarm meter, a fair caught state and a satisfying extraction. A possible original direction is **Glasshouse: Nightshift**, a rain-lit botanical vault with luminous seed cargo; choose names, layout, art and audio of your own. Keep the actual room, moving thief, guards/cones, cameras, loot and alarm visible together in the cover frame. Make safe cover, danger and loot unmistakable at contact-sheet size. Gameplay must work with keyboard and mouse, including a real menu, instruction panel, pause, restart, loss and victory. Several small well-designed rooms are preferable to an unfinished larger game.
+
+Use original code-rendered art, local/system fonts and synthesized original audio if useful; no external image generation is needed. All game scripts, media and fonts must be local under `game/` or data URIs, and a static server must run the game with no build or network dependency. Organize readable source by responsibility, with clear file/function names. Do not copy another entrant, commercial game's characters/assets/levels, or a downloaded game as your work. Do not write judge-directed persuasion into the product.
+
+The Game Studio skill is provided unchanged in `contexts/game-studio-SKILL.md`. The pinned npm package is `@zseven-w/dsh-game-studio@0.1.0-rc.6`, with Playwright 1.64.1 in `/workspaces/.makefun-cloud-tools/heist/node_modules`. The launcher configures its stdio MCP server under `dsh_game_studio`; always pass the explicit workspaceDir. Use its clean template/build/playtest workflow where compatible, retaining real observable `window.__gameState()` and, when needed, autoplay through actual gameplay actions. Generated library/template code is not newly authored game code: keep SDK scaffolds and bulky test projects outside the entry, and properly vendor any shipped library under `game/vendor/` as its minified release. The bounty's original-source, static-file, dossier and real-screenshot contract takes precedence over a generic SDK export layout. If the SDK cannot test this exact modular static game, report the concrete limitation and test the actual game with the installed Playwright instead. Never substitute SDK-template screenshots for the entered game.
+
+## Official delivery contract
+
+- Root `main.ts` must copy `game/` and `screenshots/` into MAKEFUN_OUTPUT_DIR or `/output` and write `dossier.json` with the kit's **unchanged** `vendor/makefun-game.ts`. Follow the official starter caps and Node 22 runtime. Keep output files 0644, directories 0755, deterministic across two executions.
+- Include a full MIT LICENSE with `SPDX-License-Identifier: MIT`; size golf is irrelevant here. Fill the official README template, required About/homepage/topics, using the public owner metadata supplied by the publisher. The linked GitHub owner should need no ownership claim file.
+- `game/index.html` must be a regular static file. No symlinks. Game cap 993 entries / 48 MiB; whole output 1000 entries / 64 MiB; dossier cap 1.5 MiB; source text cap 160 KiB.
+- Capture 3 or 4 real, unedited screenshots of this game's own browser render. Each must be PNG or JPEG, <=256 KiB, short side >=480 and long side <=1280 pixels, safe filenames <=128 characters. A native 1280x720 JPEG capture at appropriate browser screenshot quality avoids any later image editing. The first filename is the cover. Show distinct actual gameplay situations, not repeated title screens. Do not stage a forced win, fabricate gameplay or compose screenshots. Keep the original browser capture bytes unchanged in the entry.
+
+## Meaningful verification
+
+Run syntax checks, official local pre-submit checks with the genuine full bundle, and the kit's documented local grade/gate if provided. Record exact commands/results and any check that is only performed by the server. Exercise the real controls and verify movement/wall collision, guard/camera occlusion and detection, cover, tool effects and limited charges, loot interaction, extraction/win, caught/loss, pause and restart. Record zero page/console errors and zero external requests during actual gameplay. Visually inspect the real screenshots; improve unreadable or obstructed composition by changing the game and recapturing it, not editing images. Do not create tests that merely mirror source code or silently force the desired state.
+
+Commit only the deployable game, true screenshots, license, official vendor file and required publication metadata in the entry. Keep tool dependencies, kit, bulk tests, logs, exports, tokens and setup files out. Preserve history; no force-push. The publisher will run exact-commit GitHub Actions validation before submission. A prepared workflow is not a completed run.
+
+## Evidence and ready result
+
+Export this fresh original native session whole using the official kit's `bundle --session <actual JSONL> --no-discover`, every instruction context used (including this brief, AGENTS.md and the Game Studio skill), actual provider/model/effort, and the configured MCP declaration `dsh_game_studio=stdio:node /workspaces/.makefun-cloud-tools/heist/node_modules/@zseven-w/dsh-game-studio/plugins/game-studio/scripts/mcp-server.mjs`. Native system instructions must be carried or actually uploaded, never replaced with a stub. Bundle must report no missing parent/child or usage evidence. Do not mask source, commands, reasoning or tool output to pass checks.
+
+Write records/heist-ready.json with the exact full commit, clean tree state, native session ID/path/start time, real bundle/manifest paths and SHA-256, SDK hash, actual tests, screenshots/dimensions/bytes/hashes, official-vendor equality, output determinism, runtime compatibility, remaining failures, `submitted: false` and `github_actions_completed: false` until actually done. Never infer a score/rank. Preserve all genuine evidence. A missing credential in cloud is a publisher dependency, not a reason to invent a submission or register another account. The authorized owner-side delivery process will publish the exact cloud-authored commit, verify account/free quota, run Actions, submit once and reconcile the receipt.
