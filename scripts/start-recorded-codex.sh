@@ -40,10 +40,11 @@ timeout --signal=TERM --kill-after=20s 90m \
     --no-daemon \
     --cd "$workbench_root" \
     --model gpt-6.1-sol \
-    --sandbox workspace-write \
     --ask-for-approval on-request \
-    --add-dir /workspaces \
+    -c 'default_permissions="makefun_workspace"' \
+    -c 'permissions.makefun_workspace.extends=":workspace"' \
+    -c 'permissions.makefun_workspace.filesystem={"/workspaces"="write"}' \
+    -c 'permissions.makefun_workspace.network.enabled=true' \
     -c 'model_reasoning_effort="low"' \
     -c 'model_reasoning_summary="none"' \
-    -c 'sandbox_workspace_write.network_access=true' \
     "$owner_prompt"
