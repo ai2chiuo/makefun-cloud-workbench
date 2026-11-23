@@ -7,8 +7,8 @@
   "switch_on_permission_error": false,
   "paid_compute_allowed": false,
   "local_powershell": {
-    "status": "blocked_native_sandbox_startup",
-    "startup_error": "registered Core process has no package identity",
+    "status": "sandbox_execution_verified_recording_pending",
+    "startup_error": null,
     "agent_starts_background_process": true,
     "owner_manual_launcher_required": false,
     "official_record_before_session": true,
@@ -19,12 +19,20 @@
     "complete_genuine_parent_chain_when_applicable": true,
     "private_parent_chat_upload_allowed": false,
     "automatic_free_submission_after_passed_checks": true,
-    "last_checked_at_utc": "2026-11-23T03:36:33.2752144+00:00",
+    "last_checked_at_utc": "2026-11-23T03:46:21.7863277+00:00",
     "tested_versions": [
       "0.167.0",
       "0.171.0"
     ],
-    "preflight_report": "deliveries/local-headless-preflight-20261123.json"
+    "preflight_report": "deliveries/local-mxc-preflight-20261123.json",
+    "legacy_startup_error": null,
+    "windows_sandbox": "mxc",
+    "cli_version": "0.171.0",
+    "legacy_preflight_report": "deliveries/local-headless-preflight-20261123.json",
+    "native_codex_record_export_verified": false,
+    "full_task_pipeline_verified": false,
+    "cli_executable_windows": "D:/codex/tools/makefun-local-runner/official-0.171.0/codex-x86_64-pc-windows-msvc.exe",
+    "legacy_backend_retry_allowed": false
   },
   "github_codespaces": {
     "automatic_new_task_use_enabled": false,

@@ -1,0 +1,42 @@
+{
+  "format": "makefun-local-mxc-preflight/1",
+  "checked_at_utc": "2026-11-23T03:46:21.7863277+00:00",
+  "status": "sandbox_execution_verified",
+  "implementation": "mxc",
+  "official_cli_version": "0.171.0",
+  "official_executable_sha256": "cefea4ffee1fff04983a99c0dda99944d8b380e891e740a28b32f4b815a6e0b7",
+  "windows_build": "26200",
+  "hidden_background_powershell_started_by_agent": true,
+  "include_managed_config": true,
+  "fixed_command_exit_code": 0,
+  "fixed_command_stdout": "MXC_HEADLESS_OK",
+  "boundary_exit_code": 0,
+  "boundaries": {
+    "inside_write_read": true,
+    "outside_write_denied": true,
+    "outside_error": "EPERM",
+    "explicit_read_denied": true,
+    "denied_read_error": "EPERM",
+    "public_tcp": {
+      "connected": false,
+      "error": "EACCES"
+    },
+    "passed": true
+  },
+  "unrestricted_control": {
+    "public_tcp": {
+      "connected": true
+    },
+    "synthetic_read": true
+  },
+  "model_calls": 0,
+  "credentials_copied": false,
+  "sandbox_disabled": false,
+  "registered_core_environment_changed": false,
+  "global_settings_changed": false,
+  "native_recording_pipeline_verified": false,
+  "new_bounty_started": false,
+  "official_documentation": "https://learn.chatgpt.com/docs/windows/windows-sandbox",
+  "legacy_issue": "https://github.com/openai/codex/issues/60633",
+  "next_step": "Use MXC for local headless commands. Verify official recording, native usage and instruction context, and any genuine parent chain before new bounty implementation."
+}
