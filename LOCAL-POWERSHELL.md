@@ -6,7 +6,11 @@ The local command-startup blocker was resolved with the officially documented MX
 
 Use `windows.sandbox="mxc"` for local `codex exec` runs, scoped to the actual task's workspace and delivery folders. Keep the official recorder outside the restricted worker and start it before the new native session. For diagnostics use `sandbox --include-managed-config --permission-profile <task-profile>` so managed requirements remain in force. No global user configuration, installed service, registered-Core flag or existing runtime was changed to obtain this result.
 
-This verifies local restricted command execution, not the complete recording/submission pipeline. Native usage export, official recording, account/quota and any required parent chain are separate gates. No new bounty was built or submitted during these tests, and no model calls were made.
+The initial MXC probes verified restricted command execution without model calls. A subsequent native Codex diagnostic confirmed real command execution and provider usage after the matching official code-mode host and command-runner helpers were installed beside the isolated CLI. No desktop runtime, service or global installation was replaced.
+
+Site Sprint subsequently completed a real original implementation through an agent-started hidden PowerShell process, with MXC and automatic approval review retained. It passed 38 exact-output cases, deterministic driver checks, the official scorer and the official Docker grader on GitHub Actions, then was submitted for free as @freeway. Its [delivery report](deliveries/site-sprint-20261123.json) holds the receipt and latest checked status. This competition's live requirements explicitly make transcripts optional and every transcript/thinking check inapplicable, so no session, instruction context or private parent chat was uploaded. The genuine local native logs and usage remain unchanged.
+
+This verifies the delivery path for transcript-optional free tasks. Official recording, native bundle export and any required parent chain remain separate gates for a competition that requires transcripts. Follow its actual current policy; do not impose that gate where it explicitly does not apply.
 
 For historical comparison, the 0.167.0 legacy print-only restricted command probe failed before its command started:
 

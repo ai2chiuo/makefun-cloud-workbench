@@ -7,7 +7,7 @@
   "switch_on_permission_error": false,
   "paid_compute_allowed": false,
   "local_powershell": {
-    "status": "sandbox_execution_verified_recording_pending",
+    "status": "transcript_optional_free_submission_received",
     "startup_error": null,
     "agent_starts_background_process": true,
     "owner_manual_launcher_required": false,
@@ -25,14 +25,29 @@
       "0.171.0"
     ],
     "preflight_report": "deliveries/local-mxc-preflight-20261123.json",
-    "legacy_startup_error": null,
+    "legacy_startup_error": "registered Core process has no package identity",
     "windows_sandbox": "mxc",
     "cli_version": "0.171.0",
     "legacy_preflight_report": "deliveries/local-headless-preflight-20261123.json",
     "native_codex_record_export_verified": false,
-    "full_task_pipeline_verified": false,
+    "full_task_pipeline_verified": true,
     "cli_executable_windows": "D:/codex/tools/makefun-local-runner/official-0.171.0/codex-x86_64-pc-windows-msvc.exe",
-    "legacy_backend_retry_allowed": false
+    "legacy_backend_retry_allowed": false,
+    "native_local_harness_verified": true,
+    "native_provider_usage_verified": true,
+    "verified_scope": "Free program/v1 entries whose live requirements make transcripts optional",
+    "recording_required_pipeline_verified": false,
+    "last_delivery_report": "deliveries/site-sprint-20261123.json",
+    "official_cli_helpers_verified": [
+      {
+        "name": "codex-code-mode-host.exe",
+        "sha256": "aa02c6460ec6e2cd67d0d402d4fb5a4dc55d1a9b726596fae3534d4dfb023a16"
+      },
+      {
+        "name": "codex-command-runner.exe",
+        "sha256": "17d1294209288eb5351d17ed0e1ea5934aa0c6763ced275ed200521ca4fa7050"
+      }
+    ]
   },
   "github_codespaces": {
     "automatic_new_task_use_enabled": false,

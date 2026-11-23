@@ -1,0 +1,122 @@
+{
+  "format": "makefun-site-delivery/1",
+  "checked_at_utc": "2026-11-23T05:08:12.082Z",
+  "competition": "site-generator-speed-01-run-20261122",
+  "title": "Site Sprint",
+  "account": "freeway",
+  "repo_url": "https://github.com/ai2chiuo/makefun-site-sprint-20261123",
+  "commit": "bb6efcd0c3396982366566c57062c5683b779030",
+  "submission_id": "01a206cc-1535-757e-8819-89e5657dfedd",
+  "free": true,
+  "stage": "checked",
+  "outcome": null,
+  "archive_status": "preparing",
+  "official_checks_passed": 17,
+  "official_checks_failed": [],
+  "scores": [],
+  "rank": null,
+  "rank_provisional": true,
+  "submission_policy": {
+    "transcripts_required": false,
+    "transcript_checks_apply": false,
+    "transcripts_uploaded": false,
+    "private_parent_chat_uploaded": false,
+    "native_logs_retained_locally": true,
+    "source": "https://make.fun/api/competitions/site-generator-speed-01-run-20261122/requirements"
+  },
+  "execution": {
+    "host": "local PowerShell",
+    "agent_started_background": true,
+    "cli_version": "0.171.0",
+    "sandbox": "mxc workspace-write",
+    "approval_policy": "on-request",
+    "approvals_reviewer": "auto_review",
+    "paid_provider_api_keys_used": false
+  },
+  "source": {
+    "bytes": 30271,
+    "original_agent_files_unchanged": 6,
+    "files": [
+      {
+        "path": ".github/ci-verify.mjs",
+        "bytes": 2139,
+        "sha256": "45629c09919bd8c22e7ac6f30df185329563ca66e8bcd2cd233c0228608e7e5f"
+      },
+      {
+        "path": ".github/workflows/validate.yml",
+        "bytes": 1390,
+        "sha256": "c69f0d5288afe3feaeaa9811a43416facf7f5d0380ac80c53b76ee42c2df20a6"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1095,
+        "sha256": "48ba435ced2c7a19f48959d8969850d87494d433b553bdd1ae26aaf361f39b5f"
+      },
+      {
+        "path": "README.md",
+        "bytes": 1569,
+        "sha256": "fe2fc26e2ac3b8d173f8d4e345a5bbff4d233205017bd7ce4a1a5c63c2685c96"
+      },
+      {
+        "path": "main.ts",
+        "bytes": 742,
+        "sha256": "503c891964f39a041e4f5f402bcde2a33ae7c66964cb2fe56e4863ce42823788"
+      },
+      {
+        "path": "markdown.js",
+        "bytes": 6078,
+        "sha256": "5ec8d22673762a87ed4168bde20671155b446596ffcd84cbd82e69bbd8c541cd"
+      },
+      {
+        "path": "package.json",
+        "bytes": 137,
+        "sha256": "5e5f7369a10c670ff2c8bf29f1729004c36a6fdf0a70a5f8b1f179a8d0349e58"
+      },
+      {
+        "path": "solve.js",
+        "bytes": 17121,
+        "sha256": "bd1637315427363f77ee492d4bbaaf5cea1f3a5fb550a25926c8b3b464434176"
+      }
+    ]
+  },
+  "tests": {
+    "node": "22.23.5",
+    "practice_cases": 3,
+    "fresh_generated_cases": 18,
+    "edge_cases": 17,
+    "randomized_markdown_sources": 420,
+    "driver_runs": 16,
+    "windows_exact_and_deterministic": true,
+    "linux_exact_and_deterministic": true,
+    "docker_practice": {
+      "cases_passed": 3,
+      "cases_total": 3,
+      "passed": 1
+    },
+    "docker_l1_reproduced": true,
+    "image_digest": "sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d",
+    "official_local_checks_passed": 5,
+    "local_cpu_speedup": [
+      {
+        "name": "practice",
+        "speedup": 1.6158818097876269
+      },
+      {
+        "name": "willow-copper",
+        "speedup": 1.5510795155344919
+      },
+      {
+        "name": "ink-cedar",
+        "speedup": 1.7285191956124315
+      }
+    ],
+    "local_timings_are_not_official_ranks": true
+  },
+  "ci": {
+    "run_id": 45114945287,
+    "url": "https://github.com/ai2chiuo/makefun-site-sprint-20261123/actions/runs/45114945287",
+    "conclusion": "success",
+    "exact_commit": "bb6efcd0c3396982366566c57062c5683b779030"
+  },
+  "next_step": "Wait for queued grading; the server requests a five-minute poll interval. Do not resubmit this unchanged entry."
+}
