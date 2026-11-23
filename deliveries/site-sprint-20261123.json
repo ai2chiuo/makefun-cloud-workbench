@@ -1,6 +1,6 @@
 {
   "format": "makefun-site-delivery/1",
-  "checked_at_utc": "2026-11-23T05:08:12.082Z",
+  "checked_at_utc": "2026-11-23T05:21:12.370Z",
   "competition": "site-generator-speed-01-run-20261122",
   "title": "Site Sprint",
   "account": "freeway",
@@ -32,6 +32,13 @@
     "approval_policy": "on-request",
     "approvals_reviewer": "auto_review",
     "paid_provider_api_keys_used": false
+  },
+  "native_record": {
+    "session_id": "01a206a1-08db-7b62-b402-008e49de9736",
+    "harness": "codex",
+    "version": "0.171.0",
+    "kept_unchanged_locally": true,
+    "export_method": "No transcript export or upload for this entry: live requirements make transcripts optional."
   },
   "source": {
     "bytes": 30271,
