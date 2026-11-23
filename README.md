@@ -2,9 +2,15 @@
 
 Public preparation and handoff material for projects owned by `ai2chiuo`, entered as Make.fun `@freeway`. This is a coordination repository, not a competition entry. Each bounty gets its own fresh entry repository after its opening time.
 
-The requested default is cloud development with GitHub source control and GitHub Actions verification. Account credentials and private chat logs stay outside public repositories. No paid API keys, purchased credits, paid entry fees or on-chain transactions are authorized by this repository.
+After Glasshouse, the owner requested local PowerShell development, with the agent starting official recording and a fresh headless Codex session automatically. Tests, official checks and authorized free submissions should run without asking the owner to launch scripts. GitHub remains the source and CI destination. Account credentials and private chat logs stay outside public repositories. No paid API keys, purchased credits, paid entry fees or on-chain transactions are authorized by this repository.
 
-## Next cloud task
+**The local headless workflow is blocked, not running:** its restricted command probe fails with `registered Core process has no package identity`. Preserve sandbox and managed admission controls. See [LOCAL-POWERSHELL.md](LOCAL-POWERSHELL.md) and [compute-providers.json](compute-providers.json). Cloud launch instructions below are historical and are not the default for new tasks.
+
+## Latest completed delivery
+
+[Glasshouse: Nightshift](https://github.com/ai2chiuo/makefun-glasshouse-heist-20261122) was submitted for free as `@freeway`, receipt `01a203dd-b724-75aa-8c59-0eb8f994420f`, commit `098913e901660e091232bbb067d66c445beb7259`. All 26 official checks passed. The published final judge result is 54.9383% win rate with `finalist=false`; no exact rank was returned. See [the delivery report](deliveries/glasshouse-heist-20261122.json). The genuine original CLI record includes the automated headless runtime fix; the private delivery chat was not uploaded.
+
+## Historical cloud setup
 
 **Export preflight is currently blocked for the newer default Codex Cloud.** A real task was visible through the app, but a valid local ChatGPT login returned no CLI cloud tasks, the task lookup returned `Invalid task ID`, and the current official Make.fun kit found no session. Read [EXPORT-COMPATIBILITY.md](EXPORT-COMPATIBILITY.md) before starting. Do not treat the earlier Cloud recommendation as a verified submission route.
 

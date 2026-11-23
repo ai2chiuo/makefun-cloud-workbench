@@ -1,0 +1,32 @@
+{
+  "format": "makefun-local-headless-preflight/1",
+  "checked_at_utc": "2026-11-23T03:36:33.2752144+00:00",
+  "status": "blocked_native_sandbox_startup",
+  "agent_started_hidden_powershell": true,
+  "restricted_worker_executed": false,
+  "new_bounty_started": false,
+  "model_calls": 0,
+  "credentials_copied": false,
+  "sandbox_disabled": false,
+  "registered_core_environment_changed": false,
+  "global_install_changed": false,
+  "results": [
+    {
+      "version": "0.167.0",
+      "checked_at_utc": "2026-11-22T15:50:36.2634893+00:00",
+      "passed": false,
+      "failure": "windows sandbox failed: registered Core process has no package identity"
+    },
+    {
+      "version": "0.171.0",
+      "checked_at_utc": "2026-11-23T03:36:33.2752144+00:00",
+      "passed": false,
+      "attempted_command": "sandbox windows --permission-profile local_probe --cd probe-workspace -- cmd.exe /d /c echo SAFE_HEADLESS_SANDBOX_OK",
+      "failure": "windows sandbox failed: registered Core process has no package identity",
+      "official_asset_sha256": "4cfd8acd6dd74ccba36393c33b460907e907a8c19051e16a0d0a9783ae0246c5"
+    }
+  ],
+  "upstream_issue": "https://github.com/openai/codex/issues/60633",
+  "ready": false,
+  "next_step": "Requires a supported task-bound Windows child launch or upstream fix preserving managed restrictions. Do not claim work is running or request manual owner launch."
+}

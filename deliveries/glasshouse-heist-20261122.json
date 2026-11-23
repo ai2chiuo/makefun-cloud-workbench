@@ -1,0 +1,125 @@
+{
+  "format": "makefun-heist-delivery/1",
+  "checked_at_utc": "2026-11-23T03:24:32.950Z",
+  "competition": "best-heist-game-20261122-0559",
+  "title": "Glasshouse: Nightshift",
+  "account": "freeway",
+  "repo_url": "https://github.com/ai2chiuo/makefun-glasshouse-heist-20261122",
+  "commit": "098913e901660e091232bbb067d66c445beb7259",
+  "submission_id": "01a203dd-b724-75aa-8c59-0eb8f994420f",
+  "free": true,
+  "stage": "scored",
+  "archive_status": "finished",
+  "official_checks_passed": 26,
+  "official_checks_failed": [],
+  "judge_score": 54.9383,
+  "rank": null,
+  "judging_status": "Final evaluation finished; not a finalist. Exact rank not returned.",
+  "final_round_utc": "2026-11-22T17:59:00.000Z",
+  "final_round_taipei": "2026-11-23T01:59:00+08:00",
+  "ci": {
+    "run_id": 45036991126,
+    "url": "https://github.com/ai2chiuo/makefun-glasshouse-heist-20261122/actions/runs/45036991126",
+    "conclusion": "success",
+    "exact_commit": "098913e901660e091232bbb067d66c445beb7259"
+  },
+  "tests": {
+    "original_browser_checks": 28,
+    "unprivileged_docker_exit_codes": [
+      0,
+      0
+    ],
+    "output_deterministic": true,
+    "dossier_sha256": "a29876e428048e69175621dfa2be9858a6db7b88a78741dd3323f67b0f420fe2",
+    "unchanged_game_screenshot_license_readme_vendor_files": 14
+  },
+  "runtime_fix": {
+    "previous_commit": "6ee78f317e99acaf5ae18a8594bd3d7583ddce44",
+    "previous_receipt": "01a203b5-a791-706b-aee1-0de2462d0d24",
+    "previous_result": "Rejected: exit 1, chmod /output EPERM as UID 65534",
+    "fix": "Normalize only files and directories beneath the differently owned output mount",
+    "authorship": "Same genuine owner-started native session, automatically resumed headlessly by the authorized publisher. Publisher imported the exact tested agent patch to a writable delivery checkout and committed it; source bytes matched the recorded patch.",
+    "patch_sha256": "ffa5f0e98bc3126697d96e4e4dfed92838f9fb3e7e9972b88bb0654812aadbb4"
+  },
+  "native_record": {
+    "session_id": "01a20386-7236-71e2-9ff1-38e21eb8ac3f",
+    "harness": "codex",
+    "version": "0.167.0",
+    "model": "gpt-6.1-sol",
+    "original_prefix_preserved": true,
+    "archive_sha256": "43647b16f8bed676ba25ad35c132b177534b66c302d2c1c74306725ee09bfd28",
+    "coverage": {
+      "sessions": 1,
+      "roots": 1,
+      "subagents": 0,
+      "parents_missing": 0,
+      "subagents_missing": 0,
+      "with_system_prompt": 1,
+      "context_files": 9,
+      "harnesses": [
+        {
+          "name": "codex",
+          "version": "0.167.0",
+          "sessions": 1
+        }
+      ],
+      "notes": []
+    },
+    "warnings": [],
+    "private_delivery_chat_included": false
+  },
+  "screenshots": [
+    {
+      "name": "01-the-lumen-job.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 119726,
+      "sha256": "4a77aea7f9beeca40bd58a3009ca3f1b5618ddae48f64efec479bf348466e20b"
+    },
+    {
+      "name": "02-fern-crossing.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 117126,
+      "sha256": "a2f9fa1d2e13e8e333f8a1b8f29f2cc2fec7312e7d5bfc2f27834910506a14f0"
+    },
+    {
+      "name": "03-heart-in-the-mist.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 115255,
+      "sha256": "3d761e5592d31bff164012b6235c657096ca41e0c4d9d932fef6d363fc23fc27"
+    },
+    {
+      "name": "04-the-getaway.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 72051,
+      "sha256": "90e10ecd6e17067ffa3013a19ee4a03f3e6f283b120cbe8aab6c9fd150dbcc72"
+    }
+  ],
+  "next_step": "Delivery complete. Preserve this receipt, exact source commit and genuine native records; no automatic resubmission.",
+  "judge_score_unit": "win_rate_percent",
+  "judge": {
+    "win_rate_micro": 549383,
+    "se_micro": 231712,
+    "interval_low_micro": 168241,
+    "interval_high_micro": 930526,
+    "wins": 1,
+    "draws": 1,
+    "losses": 1,
+    "matches": 3,
+    "finalist": false,
+    "provisional": false,
+    "artifact_sha256": "a29876e428048e69175621dfa2be9858a6db7b88a78741dd3323f67b0f420fe2",
+    "artifact_bytes": 594838
+  }
+}

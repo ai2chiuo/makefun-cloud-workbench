@@ -1,11 +1,38 @@
 {
   "format": "makefun-compute-preference/1",
-  "preferred": "github_codespaces",
-  "fallback": "kaggle_notebooks",
-  "fallback_trigger": "confirmed exhaustion of included GitHub compute",
+  "preferred": "local_powershell",
+  "preference_updated_at": "2026-11-23",
+  "fallback": null,
+  "fallback_trigger": "new explicit owner request",
   "switch_on_permission_error": false,
   "paid_compute_allowed": false,
+  "local_powershell": {
+    "status": "blocked_native_sandbox_startup",
+    "startup_error": "registered Core process has no package identity",
+    "agent_starts_background_process": true,
+    "owner_manual_launcher_required": false,
+    "official_record_before_session": true,
+    "execution": "codex exec",
+    "sandbox_required": true,
+    "managed_admission_required": true,
+    "native_record_required_before_bounty_implementation": true,
+    "complete_genuine_parent_chain_when_applicable": true,
+    "private_parent_chat_upload_allowed": false,
+    "automatic_free_submission_after_passed_checks": true,
+    "last_checked_at_utc": "2026-11-23T03:36:33.2752144+00:00",
+    "tested_versions": [
+      "0.167.0",
+      "0.171.0"
+    ],
+    "preflight_report": "deliveries/local-headless-preflight-20261123.json"
+  },
+  "github_codespaces": {
+    "automatic_new_task_use_enabled": false,
+    "existing_cloud_records_must_be_preserved": true
+  },
   "kaggle": {
+    "automatic_new_task_use_enabled": false,
+    "owner_notebook_ui_execution_required_allowed": false,
     "status": "connected_cpu_batch_execution_verified",
     "account": "ai2chiuo",
     "probe_kernel": "ai2chiuo/makefun-cpu-preflight-20261122",
